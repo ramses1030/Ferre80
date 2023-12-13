@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ferretería MiHerramienta</title>
+  <!-- Agrega el enlace al archivo de estilo de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- Enlace a FontAwesome (actualizado para Bootstrap 5) -->
+<!-- Enlace a FontAwesome (actualizado para Bootstrap 5) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-">
+
+
+  <!-- Estilos CSS personalizados -->
+  <style>
+    .social-btn {
+      position: fixed;
+      bottom: 50px;
+      right: 20px;
+      z-index: 1000;
+    }
+
+    .social-btn a {
+      display: block;
+      margin-bottom: 10px;
+      padding: 12px;
+      border-radius: 50%;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      width: 55px;
+      height: 55px;
+    }
+
+    .whatsapp-btn {
+      background-color: #25d366;
+      color: #fff;
+    }
+
+    .facebook-btn {
+      background-color: #1877f2;
+      color: #fff;
+    }
+
+    .instagram-btn {
+      background-color: #c13584;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MiHerramienta</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <!-- Menú desplegable de Productos con categorías -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Productos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">
+              <div class="card" style="width: 18rem;">
+                <img src="categoria1.jpg" class="card-img-top" alt="Categoría 1">
+                <div class="card-body">
+                  <h5 class="card-title">Herramientas manuales</h5>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="card" style="width: 18rem;">
+                <img src="categoria2.jpg" class="card-img-top" alt="Categoría 2">
+                <div class="card-body">
+                  <h5 class="card-title">Herramientas eléctricas</h5>
+                </div>
+              </div>
+            </a>
+            <!-- Agrega más categorías según sea necesario -->
+          </div>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  
+
+<!-- Contenido principal -->
+<div class="container mt-4">
+    <h1>Bienvenido a Ferretería MiHerramienta</h1>
+    <p>Encuentra las herramientas que necesitas para tus proyectos.</p>
+  
+    <!-- Sección de productos -->
+    <div class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/martillo.jpg" class="card-img-top" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Martillo</h5>
+            <p class="card-text">Martillo de alta calidad para trabajos diversos.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="imagen2.jpg" class="card-img-top" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Destornillador</h5>
+            <p class="card-text">Destornillador con múltiples puntas intercambiables.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Producto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="imagen3.jpg" class="card-img-top" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Sierra eléctrica</h5>
+            <p class="card-text">Sierra eléctrica potente para cortes precisos.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+
+    <!-- Sección de productos recién llegados y ofertas -->
+<div class="row mt-4">
+    <div class="col-md-6">
+      <h2>Recién llegados</h2>
+      <div id="carouselRecienLlegados" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Producto 1 -->
+          <div class="carousel-item active">
+            <img src="recien_llegado1.jpg" class="d-block w-100" alt="Producto 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Producto 1</h5>
+              <p>Descripción detallada del producto 1. Precio: $XX.XX</p>
+            </div>
+          </div>
+          <!-- Producto 2 -->
+          <div class="carousel-item">
+            <img src="recien_llegado2.jpg" class="d-block w-100" alt="Producto 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Producto 2</h5>
+              <p>Descripción detallada del producto 2. Precio: $XX.XX</p>
+            </div>
+          </div>
+          <!-- Agrega más productos recién llegados según sea necesario -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRecienLlegados" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselRecienLlegados" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+      <h2>Ofertas</h2>
+      <div id="carouselOfertas" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Oferta 1 -->
+          <div class="carousel-item active">
+            <img src="oferta1.jpg" class="d-block w-100" alt="Oferta 1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Oferta 1</h5>
+              <p>Descripción detallada de la oferta 1. Precio: $YY.YY (antes $ZZ.ZZ)</p>
+            </div>
+          </div>
+          <!-- Oferta 2 -->
+          <div class="carousel-item">
+            <img src="oferta2.jpg" class="d-block w-100" alt="Oferta 2">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Oferta 2</h5>
+              <p>Descripción detallada de la oferta 2. Precio: $YY.YY (antes $ZZ.ZZ)</p>
+            </div>
+          </div>
+          <!-- Agrega más ofertas según sea necesario -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselOfertas" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  </div>
+  
+
+
+
+<!-- Botones flotantes de redes sociales -->
+<div class="social-btn">
+    <a href="https://wa.me/123456789" target="_blank" title="Chatea con nosotros en WhatsApp" class="whatsapp-btn">
+      <i class="fab fa-whatsapp fa-2xl"></i>
+    </a>
+    <a href="https://www.facebook.com/tuusuario" target="_blank" title="Visítanos en Facebook" class="facebook-btn">
+        <i class="fa-brands fa-facebook fa-2xl"></i>
+    </a>
+    <a href="https://www.instagram.com/tuusuario" target="_blank" title="Síguenos en Instagram" class="instagram-btn">
+      <i class="fab fa-instagram fa-2xl"></i>
+    </a>
+  </div>
+  
+  <!-- Pie de página -->
+  <!-- Pie de página -->
+<footer class="bg-light text-center p-1 fixed-bottom">
+    <div class="container">
+      <p>&copy; 2023 Ferretería MiHerramienta</p>
+    </div>
+  </footer>
+  
+  <!-- Agrega el enlace al archivo de script de Bootstrap y jQuery (necesario para el funcionamiento de algunos componentes de Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  </body>
+  </html>
